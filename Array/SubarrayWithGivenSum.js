@@ -10,7 +10,7 @@ function subArraySum(a,n,sum){
             currSumm -= a[start];
             start++;
         }
-        if(currSumm==sum){
+        if(currSumm===sum){
             let p = i - 1;
             console.log(`sum found beweetn indexes ${start} and ${p}`);
             return true;
