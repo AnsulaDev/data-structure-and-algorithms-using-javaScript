@@ -1,8 +1,8 @@
 //Frequencies of sorted Array;
 
-function printFreq(a,n){
-    let f = 1;
-    let i =1;
+function printFreq(a:number[],n:number):void{
+    let f: number = 1;
+    let i:number =1;
     while(i<n){
         while(i<n && a[i] === a[i-1]){
             f++;
@@ -17,8 +17,7 @@ function printFreq(a,n){
     }
 }
 
-let a = [10,10,10,30,30,40];
-let n=6;
+let a:number[] = [10,10,10,30,30,40];
+let n:number=6;
 console.log("frequeces of the array is: ")
-let frequecies = (printFreq(a,n));
-console.log(frequecies );
+console.log(printFreq(a,n));
