@@ -1,10 +1,10 @@
 //Subarray with Given Sum
 
-function subArraySum(a,n,sum){
-    let currSumm =a[0];
-    let start =0;
+function subArraySum(a:number[],n:number,sum:number):boolean{
+    let currSumm :number=a[0];
+    let start:number =0;
 
-    for(let i=1; i<=n; i++){
+    for(let i:number=1; i<=n; i++){
 
         while(sum<currSumm && start < i- 1){
             currSumm -= a[start];
@@ -24,8 +24,8 @@ function subArraySum(a,n,sum){
     return false;
 }
 
-var a =[15, 2, 4, 8, 9, 5, 10, 23];
-var sum =  23;
-var n=a.length;
+let a:number[] =[15, 2, 4, 8, 9, 5, 10, 23];
+let sum:number =  23;
+let n:number=a.length;
 
 console.log(subArraySum(a,n,sum));
