@@ -1,8 +1,8 @@
 // Remove duplicates from sorted array.
 
-function remove(a){
-    let res = 1;
-    for(let i=1; i<a.length;i++){
+function remove(a:number[]):number{
+    let res:number = 1;
+    for(let i:number=1; i<a.length;i++){
         if(a[i] != a[i-1]){
             a[res] = a[i];
             res++;
@@ -11,10 +11,10 @@ function remove(a){
     return res;
 }
 
-var a = [10,20,20,30,30,40];
-var r=remove(a);
+let a:number[] = [10,20,20,30,30,40];
+let r:number=remove(a);
 console.log("array after removing duplicates: ");
-for(var i=0; i<r; i++){
+for(let i:number=0; i<r; i++){
     console.log(a[i] + " ") ;
 }
 

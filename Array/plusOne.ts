@@ -6,9 +6,9 @@ Increment the large integer by one and return the resulting array of digits.*/
 
 
 
-function plusOne(a) {
-    let n= a.length;
-    for(let i= n-1; i>=0; i--){
+function plusOne(a:number[]):number[] {
+    let n:number= a.length;
+    for(let i:number= n-1; i>=0; i--){
         if(a[i]<9){
             a[i]++;
             return a;
@@ -17,10 +17,10 @@ function plusOne(a) {
             a[i] = 0;
         }
     }
-    let myNum = new Array(n+1);
+    let myNum:number[]= new Array(n+1).fill(0);
         myNum[0] = 1;
         return myNum;
 }
 
-let a = [4,3,2,1];
+let a:number[] = [4,3,2,1];
 console.log(plusOne(a));
