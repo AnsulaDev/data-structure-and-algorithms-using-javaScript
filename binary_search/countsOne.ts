@@ -1,3 +1,6 @@
+//time complexity:log(n).
+//space complexity :O(1).
+
 function count(a:number[]):number{
     let n:number=a.length;
     let low:number=0;

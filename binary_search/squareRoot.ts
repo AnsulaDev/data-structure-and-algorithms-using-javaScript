@@ -1,3 +1,9 @@
+//Square root.
+//In this problem, we are presented with a number, and our objective is to utilize binary search to determine the floor value of its square root in logarithmic complexity.
+//time complexity:log(n).
+//space complexity :O(1).
+
+
 function squareRoot(x:number) :number {
     let low =1;
     let high = x;

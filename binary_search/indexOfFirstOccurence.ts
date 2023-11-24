@@ -1,3 +1,6 @@
+//time complexity:log(n).
+//space complexity :O(1).
+
 function indexOf(a: number[], x: number):number {
     let n: number = a.length;
     let low:number = 0;;
