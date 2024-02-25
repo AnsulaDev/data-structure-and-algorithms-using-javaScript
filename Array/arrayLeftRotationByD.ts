@@ -20,8 +20,9 @@ function leftRotation(a:number[],d:number,n:number):void{
 
 let a: number[] =[1,2,3,4,5,6];
 let n:number =a.length;
-let d :number= 3;
+let d :number= 2;
+
 
 console.log("Array after left rotation by D position:");
-leftRotation(a,n,d);
+leftRotation(a,d,n);
 console.log(a);
